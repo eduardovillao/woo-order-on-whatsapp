@@ -1,0 +1,15 @@
+.myd-tabs-content {
+	display: none;
+}
+
+.myd-tabs-content--active {
+	display: block;
+}
+
+.owm-pro-tag {
+    background: red;
+    border-radius: 4px;
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 12px;
+}
