@@ -69,6 +69,10 @@ final class OMW_Plugin {
 		return self::$_instance;
 	}
 
+    /**
+     * TODO: wakeup and clone functions
+     */
+
 	/**
 	 * Constructor
 	 *
@@ -84,8 +88,15 @@ final class OMW_Plugin {
 		$this->button_in_cart_page = get_option( 'evwapp_opiton_show_cart' );
 		$this->phone_number = get_option( 'evwapp_opiton_phone_number' );
 
+        /**
+         * Do action for pro version check loaded
+         * 
+         * @since 2.0
+         */
+        do_action( 'omw_plugin_loaded' );
+
 		// Init plugin
-		add_action( 'plugins_loaded', [ $this, 'init' ] );
+        add_action( 'plugins_loaded', [ $this, 'init' ] );
 	}
 
 	/**

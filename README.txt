@@ -2,10 +2,10 @@
 Contributors: evcode
 Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce
-Requires at least: 4.9
-Tested up to: 5.7
-Stable tag: 1.1.9
-Requires PHP: 5.6
+Requires at least: 5.3
+Tested up to: 5.9
+Stable tag: 2.0
+Requires PHP: 7.0
 License: GPLv2License 
 URI:https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,73 +81,5 @@ Please, send to me: [plugins@eduardovillao.me](mailto:plugins@eduardovillao.me)
 == Changelog ==
 
 
- 1.1.8 =
-
-* Improvements in performance of scripts.
-* Compatibility with WordPress 5.7
-
- 1.1.7 =
-
-* Improvements in performance of scripts.
-* Fixed Bug.
-
- 1.1.6 =
-
-* Improvements in performance of scripts.
-* Fixed Bug.
-* New option admin template.
-
- 1.1.5 =
-
-* Fixed Bug.
-
- 1.1.4 =
-
-* Fixed Bug product variable with same price.
-
-= 1.1.3 =
-
-* Add support to product variable.
-* CSS Bug Hide elements fixed.
-* Improvements in performance of scripts.
-
-= 1.1.2 =
-
-* CSS Bug fixed.
-
-= 1.1.1 =
-
-* Bug fixed.
-* Added notification if basic settings empty.
-* Improvements in performance of scripts.
-
-= 1.1 =
-
-* Display settings options in tabs.
-* New option "Hide Price in Product Page".
-* New option "Hide Add to Cart button".
-* Improvements in performance of scripts.
-
-= 1.0.4 =
-
-* New option "open in new tab".
-* Improvements in performance of scripts.
-
-= 1.0.3 =
-
-* Improvements in performance of scripts.
-* Improvements in button icon format.
-
-= 1.0.2 =
-
-* Improvements in performance of scripts.
-* Compatibility with Wordpress 5.0 tested.
-
-= 1.0.1 =
-
-* Bug Fix.
-* Improvements in performance of scripts.
-
-= 1.0 =
-
-* Developed the plugin.
+2.0 =
+* new: plugin options.

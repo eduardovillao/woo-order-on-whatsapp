@@ -43,7 +43,7 @@ if( ! version_compare( PHP_VERSION, OMW_PHP_MINIMUM_VERSION, '>=' ) ) {
 	 * Incluce plugin main class
 	 */
 	include_once OMW_PLUGIN_PATH . 'includes/class-omw-plugin.php';
-	OMW_Plugin::instance();
+    OMW_Plugin::instance();
 }
 
 /**

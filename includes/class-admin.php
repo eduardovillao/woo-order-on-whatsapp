@@ -198,9 +198,9 @@ class OMW_Admin {
         /**
          * Action to implement more admin settings.
          */
-        do_action( 'omw_before_register_admin_settings', $this->settings );
+        $settings = apply_filters( 'omw_before_register_admin_settings', $this->settings );
 
-        foreach( $this->settings as $setting_name => $data ) {
+        foreach( $settings as $setting_name => $data ) {
 
             register_setting(
                 $data['option_group'],
@@ -221,10 +221,10 @@ class OMW_Admin {
         /**
          * Action to edit/extende admin page templates.
          */
-        do_action( 'omw_after_output_templates', $this->templates );
+        $templates = apply_filters( 'omw_after_output_templates', $this->templates );
 
         include_once OMW_PLUGIN_PATH . 'templates/admin/tab-header.php';
-        foreach( $this->templates as $template ) {
+        foreach( $templates as $template ) {
             include_once $template;
         }
         include_once OMW_PLUGIN_PATH . 'templates/admin/tab-footer.php';
