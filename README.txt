@@ -1,7 +1,7 @@
 === Order on Mobile for Wocoommerce ===
 Contributors: evcode
 Donate link: https://eduardovillao.me/
-Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce
+Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce, woocommerce mobile
 Requires at least: 5.3
 Tested up to: 5.9
 Stable tag: 2.0
@@ -13,26 +13,21 @@ Order on Mobile for Wocoommerce allows your customers to submit their orders thr
 
 == Description ==
 
-The plugin adds a button on the Woocommerce product page so your customers can submit their orders through WhatsApp. You will receive a personalized message with the product name, price and page link.
+The plugin adds a button on the WooCommerce product page so your customers can submit their orders through WhatsApp. You will receive a personalized message with the product name, price and page link.
 
 FREE VERSION FEATURES
 
-Single Product Demo  [Click Here](https://eduardovillao.me/wordpress-plugin/single-product-test/)
-Variable Product Demo  [Click Here](https://eduardovillao.me/wordpress-plugin/variable-product-test/)
+* Button in Product Page - Add a button to send product data to WhatsApp.
 
-* Custom Message - Customize the message that will be send.
-
-* Product Name and Price - Receive the product name and price that the customer wants to buy.
+* Button in Cart Page - Add a button to send order card to WhatsApp.
 
 * Product Variable Price - Receive the product variable price that the customer wants to buy.
 
-* Product Link - Receive the product link that the customer wants to buy.
+* Custom message to button - Include a custom text in your message with produt data.
 
-* Custom Button Text - Customize the button text that will be displayed.
+* Hide Price in Product Page.
 
-* Hide Price in Product Page - Hide the Product Price in Product Page.
-
-* Hide Add to Cart - Hide Add to Cart button in Prodcut Page.
+* Hide Add to Cart in Product Page.
 
 PRO VERSION FEATURES
 
@@ -42,11 +37,9 @@ Get PRO version [Click Here](https://codecanyon.net/item/order-on-whatsapp-for-w
 
 * Autoredirect after checkout.
 
-* Button in Cart Page - Add the button in your Cart Page.
+* Full custom message for create any message template to autoredirect after checkout.
 
-* Shortcode - Use shortcode to display the button in your custom product page.
-
-* Add Conversion Tag - Add the google conversion tag to the button.
+* Elementor widget for product page and others pages.
 
 == More plugins? ==
 
@@ -80,6 +73,6 @@ Please, send to me: [plugins@eduardovillao.me](mailto:plugins@eduardovillao.me)
 
 == Changelog ==
 
-
 2.0 =
-* new: plugin options.
+* Change: code improvements to support pro version.
+* Added: new options template.
