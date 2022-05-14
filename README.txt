@@ -2,9 +2,9 @@
 Contributors: evcode
 Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce, woocommerce mobile
-Requires at least: 5.3
-Tested up to: 5.9
-Stable tag: 2.0
+Requires at least: 5.4
+Tested up to: 6.0
+Stable tag: 2.1
 Requires PHP: 7.0
 License: GPLv2License 
 URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -73,6 +73,9 @@ Please, send to me: [plugins@eduardovillao.me](mailto:plugins@eduardovillao.me)
 
 == Changelog ==
 
-2.0 =
+= 2.1 =
+Changed: compatibility with WordPress 6.0.
+
+= 2.0 =
 * Change: code improvements to support pro version.
 * Added: new options template.
