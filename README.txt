@@ -3,8 +3,8 @@ Contributors: evcode
 Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce, woocommerce mobile
 Requires at least: 5.4
-Tested up to: 6.0
-Stable tag: 2.1
+Tested up to: 6.1
+Stable tag: 2.2
 Requires PHP: 7.0
 License: GPLv2License 
 URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -72,6 +72,9 @@ Please, send to me: [plugins@eduardovillao.me](mailto:plugins@eduardovillao.me)
 2. Button in Woocommerce Product Page
 
 == Changelog ==
+
+= 2.2 =
+Changed: compatibility with WordPress 6.1.
 
 = 2.1 =
 Changed: compatibility with WordPress 6.0.
