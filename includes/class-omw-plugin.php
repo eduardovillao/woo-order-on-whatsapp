@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -12,7 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 2.8
  */
 final class OMW_Plugin {
-
 	/**
 	 * Instance
 	 *
@@ -27,7 +26,7 @@ final class OMW_Plugin {
 
 	/**
 	 * Button in product page option
-	 * 
+	 *
 	 * @since 2.8
 	 * @var string
 	 */
@@ -77,7 +76,7 @@ final class OMW_Plugin {
 	 * Constructor
 	 *
 	 * Private method for prevent instance outsite the class.
-	 * 
+	 *
 	 * @since 2.2
 	 *
 	 * @access private
@@ -90,7 +89,7 @@ final class OMW_Plugin {
 
         /**
          * Do action for pro version check loaded
-         * 
+         *
          * @since 2.0
          */
         do_action( 'omw_plugin_loaded' );
@@ -121,7 +120,7 @@ final class OMW_Plugin {
 
         /**
          * Do action for init other extensions
-         * 
+         *
          * @since 2.0
          */
         do_action( 'omw_plugin_init' );
@@ -154,7 +153,7 @@ final class OMW_Plugin {
 		if( $this->button_in_product_page === 'yes' ) {
 
 			include_once OMW_PLUGIN_PATH . 'includes/class-button-product-page.php';
-			
+
             $button_product_page = new OMW_Button_Product_Page;
 			add_action( 'wp_head', [ $button_product_page, 'hide_woo_elements' ] );
 			add_action( 'woocommerce_after_add_to_cart_form', [ $button_product_page, 'output_btn' ] );
@@ -167,7 +166,7 @@ final class OMW_Plugin {
 		if( $this->button_in_cart_page === 'yes' ) {
 
 			include_once OMW_PLUGIN_PATH . 'includes/class-button-cart.php';
-			
+
             $button_cart = new OMW_Button_Cart;
 			add_action('woocommerce_after_cart_table', [ $button_cart, 'output_btn' ] );
 		}
@@ -196,9 +195,9 @@ final class OMW_Plugin {
 			esc_html__( '%1$s requires WooCommerce to be installed and activated.', 'woo-order-on-whatsapp' ),
 			'<strong>Order on WhatsApp for WooCommerce</strong>'
 		);
-	
+
 		$html_message = sprintf( '<div class="notice notice-error"><p>%1$s</p></div>', $message );
-	
+
 		echo wp_kses_post( $html_message );
 	}
 
@@ -260,7 +259,7 @@ final class OMW_Plugin {
 
 	/**
 	 * Check plugin is activated
-	 * 
+	 *
 	 * @since 2.8
 	 * @return boolean
 	 * @param string $plugin

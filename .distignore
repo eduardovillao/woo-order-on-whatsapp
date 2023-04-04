@@ -5,6 +5,7 @@ LICENSE
 README.md
 .editorconfig
 .gitignore
+.distignore
 /node_modules
 package.json
 package-lock.json

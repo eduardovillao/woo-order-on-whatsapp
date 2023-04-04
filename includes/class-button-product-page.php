@@ -6,46 +6,45 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Class to add button in single product page
- * 
+ *
  * @since 2.8
  */
 class OMW_Button_Product_Page extends OMW_Button {
-
 	/**
 	 * Product object
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public $product;
 
 	/**
 	 * Hide price option
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public $hide_price;
 
 	/**
 	 * Hide add to cart button
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public $hide_add_to_cart_button;
 
 	/**
 	 * Hide plugin button on mobile
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public $hide_whatsapp_button_on_mobile;
 
 	/**
 	 * Construc the class
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public function __construct() {
-		
+
 		$this->hide_price = get_option( 'evwapp_opiton_remove_price' );
 		$this->hide_add_to_cart_button = get_option( 'evwapp_opiton_remove_cart_btn' );
 		$this->hide_whatsapp_button_on_mobile = get_option( 'evwapp_opiton_remove_btn' );
@@ -77,7 +76,7 @@ class OMW_Button_Product_Page extends OMW_Button {
 
 	/**
 	 * Create shared text
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public function create_shared_text() {
@@ -98,14 +97,14 @@ class OMW_Button_Product_Page extends OMW_Button {
 
 	/**
 	 * Hide woocommerce product page elements
-	 * 
+	 *
 	 * @since 2.8
 	 * @return void
 	 */
 	public function hide_woo_elements() {
 
 		if( is_singular( 'product' ) ) {
-			
+
 			if( $this->hide_price === 'yes' ) {
 				?>
 				<style>.product .price {display: none !important;}</style>

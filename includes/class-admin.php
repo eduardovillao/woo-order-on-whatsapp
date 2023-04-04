@@ -6,60 +6,59 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Class to implement admin options
- * 
+ *
  * @since 2.8
  */
 class OMW_Admin {
-
     /**
      * Settings option group
-     * 
+     *
      * @since 2.8
      */
     public $option_group;
 
     /**
      * Plugin name
-     * 
+     *
      * @since 2.8
      */
     public $plugin_name;
 
     /**
      * Page options slug
-     * 
+     *
      * @since 2.8
      */
     public $page_options_slug;
 
     /**
      * Page title
-     * 
+     *
      * @since 2.0
      */
     public $page_title;
 
     /**
      * Settings
-     * 
+     *
      * @since 2.8
      */
     public $settings = [];
 
     /**
      * Page templates
-     * 
+     *
      * @since 2.0
      */
     public $templates = [];
 
     /**
      * Construct the class
-     * 
+     *
      * @since 2.8
      */
     public function __construct() {
-        
+
         $this->option_group = 'evwapp-settings-group';
         $this->plugin_name = 'Order Mobile for WooCommerce';
         $this->page_title = 'Order on Mobile for WooCommerce Options';
@@ -167,7 +166,7 @@ class OMW_Admin {
     }
 
     ///'evwapp_opiton_phone_number' intval
-    
+
     /**
      * Undocumented function
      *
@@ -176,12 +175,12 @@ class OMW_Admin {
      */
     public function add_admin_page() {
 
-        add_menu_page( 
+        add_menu_page(
             apply_filters( 'omw_admin_page_title', $this->page_title ),
             apply_filters( 'omw_admin_page_name', $this->plugin_name ),
             'manage_options',
             apply_filters( 'omw_admin_page_slug', $this->page_options_slug ),
-            [ $this, 'create_admin_page' ], 
+            [ $this, 'create_admin_page' ],
             OMW_PLUGN_URL . 'assets/img/whatsapp.png',
             56
         );

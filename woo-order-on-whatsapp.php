@@ -37,12 +37,8 @@ if( ! version_compare( PHP_VERSION, OMW_PHP_MINIMUM_VERSION, '>=' ) ) {
 	add_action( 'admin_notices', 'omw_admin_notice_wp_version_fail' );
 
 } else {
-
-	/**
-	 * Incluce plugin main class
-	 */
 	include_once OMW_PLUGIN_PATH . 'includes/class-omw-plugin.php';
-    OMW_Plugin::instance();
+	OMW_Plugin::instance();
 }
 
 /**

@@ -6,21 +6,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Class to implement button in woocommerce cart page
- * 
+ *
  * @since 2.8
  */
 class OMW_Button_Cart extends OMW_Button {
-
     /**
      * Cart items object
-     * 
+     *
      * @since 2.8
      */
     public $cart_items;
 
     /**
      * Construct the class
-     * 
+     *
      * @since 2.8
      */
     public function __construct() {
@@ -49,7 +48,7 @@ class OMW_Button_Cart extends OMW_Button {
 
     /**
 	 * Create shared text
-	 * 
+	 *
 	 * @since 2.8
 	 */
 	public function create_shared_text() {
@@ -66,18 +65,18 @@ class OMW_Button_Cart extends OMW_Button {
 
     /**
      * Get cart items
-     * 
+     *
      * @since 2.8
      * @return array
      */
     public function get_cart_items() {
-        
+
         $cart = $this->cart_items;
         if( ! empty( $cart ) ) {
 
             $items = [];
             foreach( $cart as $cart_item ) {
-                
+
                 $product = $cart_item['data'];
                 $product_variation = '';
 
@@ -102,7 +101,7 @@ class OMW_Button_Cart extends OMW_Button {
 
     /**
      * Get formated cart total
-     * 
+     *
      * @since 2.8
      */
     public function get_formated_cart_total() {
