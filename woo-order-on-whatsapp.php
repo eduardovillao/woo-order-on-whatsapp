@@ -5,7 +5,7 @@
  * Description: Receive orders requests direct on your phone from buttons on your woocommerce product page, cart page and after the checkout.
  * Author: EduardoVillao.me
  * Author URI: https://eduardovillao.me/
- * Version: 2.2
+ * Version: 2.3
  * Requires at least: 5.4
  * Requires PHP: 7.0
  * Text Domain: woo-order-on-whatsapp
@@ -19,13 +19,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'OMW_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'OMW_PLUGN_URL', plugin_dir_url( __FILE__ ) );
-define( 'OMW_VERSION', '2.2' );
+define( 'OMW_VERSION', '2.3' );
 define( 'OMW_PHP_MINIMUM_VERSION', '7.0' );
 define( 'OMW_WP_MINIMUM_VERSION', '5.4' );
 
 /**
  * Check PHP and WP version before include plugin class
- * 
+ *
  * @since 1.6
  */
 if( ! version_compare( PHP_VERSION, OMW_PHP_MINIMUM_VERSION, '>=' ) ) {
@@ -47,7 +47,7 @@ if( ! version_compare( PHP_VERSION, OMW_PHP_MINIMUM_VERSION, '>=' ) ) {
 
 /**
  * Admin notice PHP version fail
- * 
+ *
  * @since 1.6
  * @return void
  */
@@ -66,7 +66,7 @@ function omw_admin_notice_php_version_fail() {
 
 /**
  * Admin notice WP version fail
- * 
+ *
  * @since 1.6
  * @return void
  */

@@ -1,0 +1,12 @@
+{
+  "name": "woo-order-on-whatsapp",
+  "version": "2.3",
+  "private": true,
+  "description": "Receive orders requests direct on your phone from buttons on your woocommerce product page, cart page and after the checkout.",
+  "scripts": {
+    "start-dev": "npm install && composer install && ./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/ && ./vendor/bin/phpcs --config-set default_standard WordPress"
+  },
+  "author": "EduardoVillao",
+  "license": "ISC",
+  "devDependencies": {}
+}
