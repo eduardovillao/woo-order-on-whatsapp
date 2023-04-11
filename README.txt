@@ -4,7 +4,7 @@ Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce, woocommerce mobile
 Requires at least: 5.4
 Tested up to: 6.2
-Stable tag: 2.3
+Stable tag: 2.3.1
 Requires PHP: 7.0
 License: GPLv2License
 URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -72,6 +72,9 @@ Please, send to me: [plugins@eduardovillao.me](mailto:plugins@eduardovillao.me)
 2. Button in Woocommerce Product Page
 
 == Changelog ==
+= 2.3.1 =
+Fix: error on cart page when edit with Elementor editor.
+
 = 2.3 =
 Changed: compatibility with WordPress 6.2.
 
