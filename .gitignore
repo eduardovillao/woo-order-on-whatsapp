@@ -10,3 +10,4 @@ composer.lock
 *.sql
 *.tar.gz
 *.zip
+style.bundle.js
