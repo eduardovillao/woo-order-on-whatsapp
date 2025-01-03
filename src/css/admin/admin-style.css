@@ -22,3 +22,8 @@
 	color: #fff;
 	opacity: 0.8;
 }
+
+p.omw-description {
+	font-size: 13px !important;
+	color: #7d7d7d !important;
+}

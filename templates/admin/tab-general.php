@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</th>
 					<td>
 						<input type="text" name="evwapp_opiton_phone_number" id="evwapp_opiton_phone_number" class="regular-text" value="<?php echo get_option('evwapp_opiton_phone_number'); ?>" inputmode="numeric" pattern="\d*" placeholder="5551XXXXXXXXX" required>
-						<p class="description"><?php esc_html_e( 'Enter with your country code 5551XXXXXXXXX', 'woo-order-on-whatsapp');?></p>
+						<p class="omw-description"><?php esc_html_e( 'Enter with your country code 5551XXXXXXXXX', 'woo-order-on-whatsapp');?></p>
 					</td>
 				</tr>
 				<tr>
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</th>
 					<td>
 						<input type="checkbox" disabled name="evwapp_opiton_show_thank" id="evwapp_opiton_show_thank" value="yes" <?php checked( get_option('evwapp_opiton_show_thank'), 'yes' );?>><?php esc_html_e( 'Yes, redirect after checkout.', 'woo-order-on-whatsapp' );?>
-						<p class="description"><?php esc_html_e( 'Customer will be redirected to WhatsApp with a custom message defined on tab "Checkout".', 'woo-order-on-whatsapp' );?></p>
+						<p class="omw-description"><?php esc_html_e( 'Customer will be redirected to WhatsApp with a custom message defined on tab "Checkout".', 'woo-order-on-whatsapp' );?></p>
 					</td>
 				</tr>
 				<tr>
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</th>
 					<td>
 						<input type="checkbox" name="evwapp_opiton_show_btn_single" id="evwapp_opiton_show_btn_single" value="yes" <?php checked( get_option('evwapp_opiton_show_btn_single'), 'yes' );?>><?php esc_html_e( 'Yes, show button in single product page.', 'woo-order-on-whatsapp' );?>
-						<p class="description"><?php esc_html_e( 'The button will be displayed on product page after "add to cart" button.', 'woo-order-on-whatsapp' );?></p>
+						<p class="omw-description"><?php esc_html_e( 'The button will be displayed on product page after "add to cart" button.', 'woo-order-on-whatsapp' );?></p>
 					</td>
 				</tr>
 
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					</th>
 					<td>
 						<input type="checkbox" name="evwapp_opiton_show_cart" id="evwapp_opiton_show_cart" value="yes" <?php checked( get_option('evwapp_opiton_show_cart'), 'yes' );?>><?php esc_html_e( 'Yes, show button in cart page.', 'order-on-whatspp-for-woocommerce' );?>
-						<p class="description"><?php esc_html_e( 'The button will be displayed on cart page.', 'woo-order-on-whatsapp' );?></p>
+						<p class="omw-description"><?php esc_html_e( 'The button will be displayed on cart page.', 'woo-order-on-whatsapp' );?></p>
 					</td>
 				</tr>
 			</tbody>
