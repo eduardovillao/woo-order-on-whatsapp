@@ -1,7 +1,7 @@
 <?php
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 
 /**
@@ -68,9 +68,9 @@ final class OMW_Plugin {
 		return self::$_instance;
 	}
 
-    /**
-     * TODO: wakeup and clone functions
-     */
+	/**
+	 * TODO: wakeup and clone functions
+	 */
 
 	/**
 	 * Constructor
@@ -87,15 +87,15 @@ final class OMW_Plugin {
 		$this->button_in_cart_page = get_option( 'evwapp_opiton_show_cart' );
 		$this->phone_number = get_option( 'evwapp_opiton_phone_number' );
 
-        /**
-         * Do action for pro version check loaded
-         *
-         * @since 2.0
-         */
-        do_action( 'omw_plugin_loaded' );
+		/**
+		 * Do action for pro version check loaded
+		 *
+		 * @since 2.0
+		 */
+		do_action( 'omw_plugin_loaded' );
 
 		// Init plugin
-        add_action( 'plugins_loaded', [ $this, 'init' ] );
+		add_action( 'plugins_loaded', [ $this, 'init' ] );
 	}
 
 	/**
@@ -118,16 +118,16 @@ final class OMW_Plugin {
 			return;
 		}
 
-        /**
-         * Do action for init other extensions
-         *
-         * @since 2.0
-         */
-        do_action( 'omw_plugin_init' );
+		/**
+		 * Do action for init other extensions
+		 *
+		 * @since 2.0
+		 */
+		do_action( 'omw_plugin_init' );
 
-        /**
-         * Include initial required files
-         */
+		/**
+		 * Include initial required files
+		 */
 		include_once OMW_PLUGIN_PATH . 'includes/class-utils.php';
 		include_once OMW_PLUGIN_PATH . 'includes/abstract-class-button.php';
 
@@ -142,9 +142,9 @@ final class OMW_Plugin {
 
 			include_once OMW_PLUGIN_PATH . 'includes/class-admin.php';
 
-            $admin = new OMW_Admin;
-            add_action( 'admin_init', [ $admin, 'register_settings' ] );
-            add_action( 'admin_menu', [ $admin, 'add_admin_page' ] );
+			$admin = new OMW_Admin;
+			add_action( 'admin_init', [ $admin, 'register_settings' ] );
+			add_action( 'admin_menu', [ $admin, 'add_admin_page' ] );
 		}
 
 		/**
@@ -154,7 +154,7 @@ final class OMW_Plugin {
 
 			include_once OMW_PLUGIN_PATH . 'includes/class-button-product-page.php';
 
-            $button_product_page = new OMW_Button_Product_Page;
+			$button_product_page = new OMW_Button_Product_Page;
 			add_action( 'wp_head', [ $button_product_page, 'hide_woo_elements' ] );
 			add_action( 'woocommerce_after_add_to_cart_form', [ $button_product_page, 'output_btn' ] );
 			add_shortcode( 'woo-order-on-whatsapp', [ $button_product_page, 'output_btn' ] );
@@ -167,7 +167,7 @@ final class OMW_Plugin {
 
 			include_once OMW_PLUGIN_PATH . 'includes/class-button-cart.php';
 
-            $button_cart = new OMW_Button_Cart;
+			$button_cart = new OMW_Button_Cart;
 			add_action('woocommerce_after_cart_table', [ $button_cart, 'output_btn' ] );
 		}
 

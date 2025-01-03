@@ -1,7 +1,7 @@
 <?php
 
 if ( ! defined( 'ABSPATH' ) ) {
-  exit; // Exit if accessed directly.
+	exit;
 }
 
 /**
@@ -10,38 +10,38 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 2.8
  */
 class OMW_Button_Cart extends OMW_Button {
-    /**
-     * Cart items object
-     *
-     * @since 2.8
-     */
-    public $cart_items;
+	/**
+	 * Cart items object
+	 *
+	 * @since 2.8
+	 */
+	public $cart_items;
 
-    /**
-     * Construct the class
-     *
-     * @since 2.8
-     */
-    public function __construct() {
-        $this->button_custom_message = get_option( 'evwapp_opiton_message_cart' );
-        $this->button_text = get_option( 'evwapp_opiton_text_button_cart' );
-        $this->target = get_option( 'evwapp_opiton_cart_button_target' );
-    }
+	/**
+	 * Construct the class
+	 *
+	 * @since 2.8
+	 */
+	public function __construct() {
+		$this->button_custom_message = get_option( 'evwapp_opiton_message_cart' );
+		$this->button_text = get_option( 'evwapp_opiton_text_button_cart' );
+		$this->target = get_option( 'evwapp_opiton_cart_button_target' );
+	}
 
-    /**
-     * Output button
-     *
-     * @since 2.8
-     * @return void
-     */
-    public function output_btn() {
-        if ( is_cart() ) {
-            $this->cart_items = WC()->cart->get_cart_contents();
-            $shared_text = $this->create_shared_text();
-		    $whatsapp_link = $this->create_whatsapp_link( $shared_text );
-            $this->create_button( $whatsapp_link, $this->target, $this->button_text );
-        }
-    }
+	/**
+	 * Output button
+	 *
+	 * @since 2.8
+	 * @return void
+	 */
+	public function output_btn() {
+		if ( is_cart() ) {
+			$this->cart_items = WC()->cart->get_cart_contents();
+			$shared_text = $this->create_shared_text();
+			$whatsapp_link = $this->create_whatsapp_link( $shared_text );
+			$this->create_button( $whatsapp_link, $this->target, $this->button_text );
+		}
+	}
 
 	/**
 	 * Create shared text
@@ -92,13 +92,13 @@ class OMW_Button_Cart extends OMW_Button {
 		return $items;
 	}
 
-    /**
-     * Get formated cart total
-     *
-     * @since 2.8
-     */
-    public function get_formated_cart_total() {
-        $cart_total = WC()->cart->get_cart_contents_total();
-        return OMW_Utils::format_price( $cart_total );
-    }
+	/**
+	 * Get formated cart total
+	 *
+	 * @since 2.8
+	 */
+	public function get_formated_cart_total() {
+		$cart_total = WC()->cart->get_cart_contents_total();
+		return OMW_Utils::format_price( $cart_total );
+	}
 }

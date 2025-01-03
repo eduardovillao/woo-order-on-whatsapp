@@ -1,7 +1,7 @@
 <?php
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 
 /**
@@ -64,8 +64,8 @@ class OMW_Button_Product_Page extends OMW_Button {
 		if( is_singular( 'product' ) ) {
 
 			$this->product = wc_get_product();
-            $shared_text = $this->create_shared_text();
-		    $whatsapp_link = $this->create_whatsapp_link( $shared_text );
+			$shared_text = $this->create_shared_text();
+			$whatsapp_link = $this->create_whatsapp_link( $shared_text );
 			return $this->create_button( $whatsapp_link, $this->target, $this->button_text );
 
 		} else {
@@ -81,7 +81,7 @@ class OMW_Button_Product_Page extends OMW_Button {
 	 */
 	public function create_shared_text() {
 
-        $product = $this->product;
+		$product = $this->product;
 
 		return sprintf(
 			'%1$s%2$s%3$s%4$s%5$s%6$s%7$s',
