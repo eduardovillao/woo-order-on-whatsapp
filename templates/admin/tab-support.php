@@ -5,7 +5,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div id="tab-support-content" class="myd-tabs-content">
-
 	<h2><?php esc_html_e( 'Support', 'woo-order-on-whatsapp' );?></h2>
 
 	<div class="card">

@@ -5,9 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div id="tab-checkout-content" class="myd-tabs-content">
-
 	<h2><?php esc_html_e( 'Checkout', 'woo-order-on-whatsapp' );?></h2>
-	<p><?php esc_html_e( 'In this section you can edit your message used in redirect after checkout.', 'woo-order-on-whatsapp' );?></p>
 
 	<div class="card">
 		<h3><?php esc_html_e( 'How to use?', 'woo-order-on-whatsapp' );?></h3>

@@ -5,10 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div id="tab-general-content" class="myd-tabs-content myd-tabs-content--active">
-
 	<h2><?php esc_html_e( 'General Settings', 'woo-order-on-whatsapp' );?></h2>
-	<p><?php esc_html_e( 'In this section you can edit general option.', 'woo-order-on-whatsapp' );?></p>
-
 		<table class="form-table">
 			<tbody>
 				<tr">
@@ -16,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<label for="evwapp_opiton_phone_number"><?php esc_html_e( 'WhatsApp Number', 'woo-order-on-whatsapp' );?></label>
 					</th>
 					<td>
-						<input type="number" name="evwapp_opiton_phone_number" id="evwapp_opiton_phone_number" class="regular-text" value="<?php echo get_option('evwapp_opiton_phone_number'); ?>">
+						<input type="text" name="evwapp_opiton_phone_number" id="evwapp_opiton_phone_number" class="regular-text" value="<?php echo get_option('evwapp_opiton_phone_number'); ?>" inputmode="numeric" pattern="\d*" placeholder="5551XXXXXXXXX" required>
 						<p class="description"><?php esc_html_e( 'Enter with your country code 5551XXXXXXXXX', 'woo-order-on-whatsapp');?></p>
 					</td>
 				</tr>

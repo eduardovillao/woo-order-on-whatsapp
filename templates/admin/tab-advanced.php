@@ -5,9 +5,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <div id="tab-advanced-content" class="myd-tabs-content">
-
 	<h2><?php esc_html_e( 'Advanced Settings', 'woo-order-on-whatsapp' );?></h2>
-	<p><?php esc_html_e( 'In this section you can edit some advanced options.', 'woo-order-on-whatsapp' );?></p>
 
 	<table class="form-table">
 		<tbody>

@@ -51,6 +51,6 @@ class OMW_Utils {
 	 * @return string
 	 */
 	public static function get_pro_tag() {
-		echo '<span class="owm-pro-tag">' . esc_html__( 'Only on Pro', 'woo-order-on-whatsapp' ) . '';
+		echo '<a class="owm-pro-tag" href="" target="_blank">' . esc_html__( 'Only on Pro', 'woo-order-on-whatsapp' ) . '</a>';
 	}
 }

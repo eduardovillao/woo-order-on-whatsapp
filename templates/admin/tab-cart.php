@@ -6,9 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 <div id="tab-cart-content" class="myd-tabs-content">
-
 	<h2><?php esc_html_e( 'Cart Page', 'woo-order-on-whatsapp' );?></h2>
-	<p><?php esc_html_e( 'In this section you can edit some option for button in cart page.', 'woo-order-on-whatsapp' );?></p>
 
 	<table class="form-table">
 		<tbody>
