@@ -4,9 +4,18 @@
   "private": true,
   "description": "Receive orders requests direct on your phone from buttons on your woocommerce product page, cart page and after the checkout.",
   "scripts": {
-    "start-dev": "npm install && composer install && ./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/ && ./vendor/bin/phpcs --config-set default_standard WordPress"
+    "start-dev": "npm install && composer install && ./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs/ && ./vendor/bin/phpcs --config-set default_standard WordPress",
+    "build": "webpack --mode=production"
   },
   "author": "EduardoVillao",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "@wordpress/eslint-plugin": "^18.0.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.0",
+    "esbuild-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
 }

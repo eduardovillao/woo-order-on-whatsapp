@@ -1,7 +1,7 @@
 === Order on Mobile for Wocoommerce ===
 Contributors: evcode
 Donate link: https://eduardovillao.me/
-Tags: woocommerce, whatsapp, products, order, woocommerce whatsapp, whatsapp order woocommerce, woocommerce mobile
+Tags: woocommerce, whatsapp, order on whatsapp
 Requires at least: 5.5
 Tested up to: 6.7
 Stable tag: 2.3.4
