@@ -27,3 +27,16 @@ p.omw-description {
 	font-size: 13px !important;
 	color: #7d7d7d !important;
 }
+
+.owm-offer-banner__image {
+	width: 100%;
+	height: auto;
+	max-width: 900px;
+    object-fit: contain;
+	border-radius: 16px;
+}
+
+.owm-offer-banner__link {
+	display: block;
+	margin-block-start: 20px;
+}
