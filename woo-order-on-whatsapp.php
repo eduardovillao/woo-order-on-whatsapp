@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Order on Mobile for WooCommerce
- * Plugin URI: https://eduardovillao.me/wordpress-plugin/order-on-mobile-for-wocoommerce/
- * Description: Order on Mobile for Wocoommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
+ * Plugin URI: https://eduardovillao.me/wordpress-plugin/order-on-mobile-for-woocommerce/
+ * Description: Order on Mobile for WooCommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
  * Author: EduardoVillao.me
  * Author URI: https://eduardovillao.me/
  * Version: 2.4

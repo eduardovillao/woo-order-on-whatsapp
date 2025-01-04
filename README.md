@@ -1,6 +1,6 @@
-# Order on Mobile for Wocoommerce
+# Order on Mobile for WooCommerce
 
-Order on Mobile for Wocoommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
+Order on Mobile for WooCommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
 
 ## Description
 
@@ -49,7 +49,7 @@ We’d love to hear from you! [plugins@eduardovillao.me](mailto:plugins@eduardov
 
 2. Activate the plugin in WordPress
 
-3. Go to "Order on Mobile for Wocoommerce" admin panel
+3. Go to "Order on Mobile for WooCommerce" admin panel
 
 4. Enter your phone number and other informations
 
