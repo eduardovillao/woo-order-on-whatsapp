@@ -4,7 +4,7 @@ Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, order on whatsapp
 Requires at least: 5.5
 Tested up to: 6.7
-Stable tag: 2.4
+Stable tag: 2.4.1
 Requires PHP: 7.4
 License: GPLv2License
 URI:https://www.gnu.org/licenses/gpl-2.0.html
@@ -71,6 +71,9 @@ We’d love to hear from you! [plugins@eduardovillao.me](mailto:plugins@eduardov
 2. Button in Woocommerce Product Page
 
 == Changelog ==
+
+= 2.4.1 =
+Changed: code improvements.
 
 = 2.4 =
 Changed: PHP minimum version required change to 7.4.
