@@ -1,31 +1,35 @@
 # Order on Mobile for WooCommerce
 
-Order on Mobile for WooCommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
+Order on Mobile for WooCommerce connects your store directly to WhatsApp, the world's most popular messaging app. By allowing customers to order directly via WhatsApp, you simplify the purchasing journey, build trust through personal interaction, and significantly boost your conversion rates.
 
 ## Description
 
-The plugin integrates seamlessly with WooCommerce, adding a WhatsApp button to your product and cart pages. This allows customers to submit their orders quickly, sending personalized messages with product details, prices, and links and much more.
+**Why use Order on Mobile for WooCommerce?**
+
+*   **Boost Conversions:** Remove friction from the checkout process. A simple "Order on WhatsApp" button encourages impulse buys and quick inquiries.
+*   **Direct Communication:** Start a conversation immediately. Answer questions, negotiate prices, or upsell products in real-time.
+*   **Seamless Integration:** Adds a beautiful, customizable button to your Product and Cart pages that works perfectly with your existing theme.
+*   **Flexible Control:** You decide where the button appears, what the message says, and whether to replace standard "Add to Cart" functionality.
 
 ### Free Version Features
 
-* **WhatsApp Button on Product Page:** Add a button to send product details to WhatsApp.
-* **WhatsApp Button on Cart Page:** Let customers send their cart details, including all items, to WhatsApp.
-* **Variable Product Price Support:** Ensure accurate pricing for variable products in the message.
-* **Customizable Button Message:** Add a personalized text to accompany product details in the WhatsApp message.
-* **Hide Price on Product Page:** Option to hide the product price from the product page.
-* **Hide Add to Cart Button:** Remove the “Add to Cart” button from the product page.
+*   **WhatsApp Button on Product Page:** Instantly let users send product details to your WhatsApp number.
+*   **WhatsApp Button on Cart Page:** Allow customers to send their entire cart content in a single message.
+*   **Variable Product Support:** Accurate pricing and details for product variations.
+*   **Customizable Messages:** Pre-fill the WhatsApp message to make it easy for customers to hit "Send".
+*   **Hide Price/Add to Cart:** strict control over the buying process—perfect for "Call for Price" or catalog-mode stores.
 
 ### Unlock More with the PRO Version 🚀
 
-Get access to advanced features that take your WooCommerce store to the next level!
+Take your sales strategy to the next level with automation and enhanced customization!
 
 **PRO Features:**
 
-* **Auto-Redirect After Checkout:** Automatically redirect customers to WhatsApp after checkout with their complete order details.
-* **Fully Customizable Message Templates:** Create personalized message templates with tokens for dynamic data like order ID, total, and items.
-* **Elementor Widget Support:** Add WhatsApp buttons anywhere on your site with Elementor and choose specific products for redirection.
-* **Hide Button on Desktop:** Control button visibility by hiding it on desktop devices.
-* **More Features and Customization Options!**
+*   **Auto-Redirect After Checkout:** Seamlessly guide users to WhatsApp *after* a standard WooCommerce checkout to confirm orders or payment.
+*   **Dynamic Message Templates:** Use smart tags (e.g., {order_id}, {total}, {customer_name}) to create professional, automated messages.
+*   **Elementor Widget:** Drag and drop WhatsApp buttons anywhere on your site.
+*   **Device Visibility Control:** Show the button only on mobile devices to target your specific audience.
+*   **Priority Support:** Get faster help when you need it.
 
 [Watch the Video Demo](https://www.youtube.com/watch?v=ssLs8SHk05k)
 
