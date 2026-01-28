@@ -44,7 +44,6 @@ class OMW_Button_Product_Page extends OMW_Button {
 	 * @since 2.8
 	 */
 	public function __construct() {
-
 		$this->hide_price = get_option( 'evwapp_opiton_remove_price' );
 		$this->hide_add_to_cart_button = get_option( 'evwapp_opiton_remove_cart_btn' );
 		$this->hide_whatsapp_button_on_mobile = get_option( 'evwapp_opiton_remove_btn' );
@@ -54,22 +53,40 @@ class OMW_Button_Product_Page extends OMW_Button {
 	}
 
 	/**
+	 * Create HTML button
+	 *
+	 * @since 2.8
+	 */
+	public function create_button( $link, $target, $button_text ) {
+		$product = $this->product;
+		if ( $product && $product->is_type( 'variable' ) ) :
+			$encode_message = urlencode( html_entity_decode( $this->button_custom_message, ENT_QUOTES | ENT_HTML5, 'UTF-8' ) );
+			?>
+			<form id="woapp-fields">
+				<input type="hidden" id="woapp_number" value="<?php echo \esc_attr( OMW_Plugin::instance()->phone_number ); ?>"></input>
+				<input type="hidden" id="woapp_message" value="<?php echo \esc_attr( $encode_message ); ?>"></input>
+				<input type="hidden" id="woapp_name" value="<?php echo \esc_attr( $product->get_name() ); ?>"></input>
+				<input type="hidden" id="woapp_reg_price" value="<?php echo \esc_attr( $this->get_formmated_price( $product ) ); ?>"></input>
+				<input type="hidden" id="woapp_link" value="<?php echo \esc_attr( $product->get_permalink() ); ?>"></input>
+			</form>
+		<?php endif;
+
+		parent::create_button( $link, $target, $button_text );
+	}
+
+	/**
 	 * Output button
 	 *
 	 * @since 2.8
 	 * @return void
 	 */
 	public function output_btn() {
-
 		if( is_singular( 'product' ) ) {
-
 			$this->product = wc_get_product();
 			$shared_text = $this->create_shared_text();
 			$whatsapp_link = $this->create_whatsapp_link( $shared_text );
 			return $this->create_button( $whatsapp_link, $this->target, $this->button_text );
-
 		} else {
-
 			return esc_html_e( 'Sorry, its not a product page. Please use this shortcode only on your product page.', 'woo-order-on-whatsapp' );
 		}
 	}
@@ -80,7 +97,6 @@ class OMW_Button_Product_Page extends OMW_Button {
 	 * @since 2.8
 	 */
 	public function create_shared_text() {
-
 		$product = $this->product;
 
 		return sprintf(
@@ -102,7 +118,6 @@ class OMW_Button_Product_Page extends OMW_Button {
 	 * @return void
 	 */
 	public function hide_woo_elements() {
-
 		if( is_singular( 'product' ) ) {
 
 			if( $this->hide_price === 'yes' ) {

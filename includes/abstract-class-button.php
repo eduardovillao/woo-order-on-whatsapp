@@ -72,16 +72,6 @@ abstract class OMW_Button {
 	public function create_button( $link, $target, $button_text ) {
 		?>
 		<div class="div_evowap_btn">
-			<?php if ( is_singular( 'product' ) && wc_get_product()->is_type( 'variable' ) ) : ?>
-				<form id="woapp-fields">
-					<input type="hidden" id="woapp_number" value="'.$phone.'"></input>
-					<input type="hidden" id="woapp_message" value="'.$encode_message.'"></input>
-					<input type="hidden" id="woapp_name" value="'.$this->evowap_get_product_name().'"></input>
-					<input type="hidden" id="woapp_reg_price" value="'.$this->evowap_get_product_price().'"></input>
-					<input type="hidden" id="woapp_link" value="'.$this->evowap_get_product_link().'"></input>
-				</form>
-			<?php endif; ?>
-
 			<?php printf(
 				'<a href="%1$s" class="evowap_btn" id="evowap_btn" role="button" target="%2$s">%3$s%4$s</a>',
 				esc_attr( $link ),

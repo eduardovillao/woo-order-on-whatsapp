@@ -208,7 +208,7 @@ final class OMW_Plugin {
 	 * @access public
 	 */
 	public function enqueue_plugin_js() {
-		wp_enqueue_script( 'omw_script',  OMW_PLUGN_URL . '/assets/js/front-js.min.js', array('jquery'), OMW_VERSION, true );
+		wp_enqueue_script( 'omw_script',  OMW_PLUGN_URL . '/assets/js/front-js.min.js', array(), OMW_VERSION, true );
 	}
 
 	/**
