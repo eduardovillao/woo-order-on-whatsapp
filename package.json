@@ -1,6 +1,6 @@
 {
   "name": "woo-order-on-whatsapp",
-  "version": "2.3",
+  "version": "2.4.2",
   "private": true,
   "description": "Receive orders requests direct on your phone from buttons on your woocommerce product page, cart page and after the checkout.",
   "scripts": {
