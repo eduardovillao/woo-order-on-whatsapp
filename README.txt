@@ -4,7 +4,7 @@ Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, order on whatsapp
 Requires at least: 5.5
 Tested up to: 6.9
-Stable tag: 2.4.2
+Stable tag: 2.8.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -65,6 +65,12 @@ We’d love to hear from you! [plugins@eduardovillao.me](mailto:plugins@eduardov
 2. Button in Woocommerce Product Page
 
 == Changelog ==
+
+= 2.8.0 =
+* Changed: Refactored front-end JavaScript to Vanilla JS (removed jQuery dependency).
+* Changed: Improved code architecture by refactoring button classes.
+* Fix: Corrected broken PHP logic and missing methods for variable product fields.
+* Changed: Updated versioning to align with the Pro version.
 
 = 2.4.2 =
 Changed: small code improvements and compatibility.

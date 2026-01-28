@@ -52,6 +52,12 @@ We’d love to hear from you! [plugins@eduardovillao.me](mailto:plugins@eduardov
 
 ## Changelog
 
+### 2.8.0
+* Changed: Refactored front-end JavaScript to Vanilla JS (removed jQuery dependency).
+* Changed: Improved code architecture by refactoring button classes.
+* Fix: Corrected broken PHP logic and missing methods for variable product fields.
+* Changed: Updated versioning to align with the Pro version.
+
 ### 2.4.2
 * Changed: small code improvements and compatibility.
 
