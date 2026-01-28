@@ -181,7 +181,7 @@ class OMW_Admin {
 			'manage_options',
 			apply_filters( 'omw_admin_page_slug', $this->page_options_slug ),
 			[ $this, 'create_admin_page' ],
-			OMW_PLUGN_URL . 'assets/img/whatsapp.png',
+			OMW_PLUGN_URL . 'assets/img/whatsapp.webp',
 			56
 		);
 	}

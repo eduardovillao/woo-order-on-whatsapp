@@ -4,10 +4,10 @@ Donate link: https://eduardovillao.me/
 Tags: woocommerce, whatsapp, order on whatsapp
 Requires at least: 5.5
 Tested up to: 6.9
-Stable tag: 2.4.2
+Stable tag: 2.8.0
 Requires PHP: 7.4
-License: GPLv2License
-URI:https://www.gnu.org/licenses/gpl-2.0.html
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Order on Mobile for WooCommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
 
@@ -42,7 +42,7 @@ https://www.youtube.com/watch?v=ssLs8SHk05k
 
 == More Plugins by Us ==
 
-Discover other plugins to enhance your WordPress experience:: [WordPress Plugins](https://eduardovillao.me/wordpress-plugins/)
+Discover other plugins to enhance your WordPress experience: [WordPress Plugins](https://eduardovillao.me/wordpress-plugins/)
 
 == Learn WordPress Tips ==
 
@@ -54,23 +54,23 @@ We’d love to hear from you! [plugins@eduardovillao.me](mailto:plugins@eduardov
 
 == Installation ==
 
-1. Upload the plugin files to the WordPress
-
-2. Activate the plugin in WordPress
-
-3. Go to "Order on Mobile for WooCommerce" admin panel
-
-4. Enter your phone number and other informations
-
-== Frequently Asked Questions ==
+1. Upload the plugin files to the `/wp-content/plugins/woo-order-on-whatsapp` directory, or install the plugin through the WordPress plugins screen directly.
+2. Activate the plugin through the 'Plugins' screen in WordPress.
+3. Go to the "Order on Mobile for WooCommerce" settings page.
+4. Enter your phone number and other information to configure the plugin.
 
 == Screenshots ==
 
 1. Order on Mobile for WooCommerce admin panel
-
 2. Button in Woocommerce Product Page
 
 == Changelog ==
+
+= 2.8.0 =
+* Changed: Refactored front-end JavaScript to Vanilla JS (removed jQuery dependency).
+* Changed: Improved code architecture by refactoring button classes.
+* Fix: Corrected broken PHP logic and missing methods for variable product fields.
+* Changed: Updated versioning to align with the Pro version.
 
 = 2.4.2 =
 Changed: small code improvements and compatibility.

@@ -5,7 +5,7 @@
  * Description: Order on Mobile for WooCommerce allows your customers to submit their orders through WhatsApp, directly from the Woocommerce product page.
  * Author: EduardoVillao.me
  * Author URI: https://eduardovillao.me/
- * Version: 2.4.2
+ * Version: 2.8.0
  * Requires at least: 5.5
  * Requires PHP: 7.4
  * Text Domain: woo-order-on-whatsapp
@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'OMW_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'OMW_PLUGN_URL', plugin_dir_url( __FILE__ ) );
-define( 'OMW_VERSION', '2.4.2' );
+define( 'OMW_VERSION', '2.8.0' );
 define( 'OMW_PHP_MINIMUM_VERSION', '7.4' );
 define( 'OMW_WP_MINIMUM_VERSION', '5.5' );
 

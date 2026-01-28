@@ -16,4 +16,5 @@ composer.lock
 webpack.config.js
 style.bundle.js
 ruleset.xml
-src/*
+src/\*
+.nvmrc
