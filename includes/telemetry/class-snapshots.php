@@ -29,9 +29,6 @@ class Snapshots {
 		$show_btn_single = get_option( 'evwapp_opiton_show_btn_single', 'no' );
 		$show_btn_cart = get_option( 'evwapp_opiton_show_cart', 'no' );
 
-		$custom_msg_product = ! empty( get_option( 'evwapp_opiton_message' ) );
-		$custom_msg_cart = ! empty( get_option( 'evwapp_opiton_message_cart' ) );
-
 		$remove_add_to_cart = get_option( 'evwapp_opiton_remove_btn', 'no' );
 		$remove_price = get_option( 'evwapp_opiton_remove_price', 'no' );
 

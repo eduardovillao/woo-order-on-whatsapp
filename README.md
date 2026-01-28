@@ -56,6 +56,11 @@ We’d love to hear from you! [plugins@eduardovillao.me](mailto:plugins@eduardov
 
 ## Changelog
 
+### 2.8.1
+* Added: Telemetry system to improve plugin support and understand usage patterns.
+* Changed: General code improvements and refactoring for better performance and maintainability.
+* Changed: Optimized API request handling for better reliability.
+
 ### 2.8.0
 * Changed: Refactored front-end JavaScript to Vanilla JS (removed jQuery dependency).
 * Changed: Improved code architecture by refactoring button classes.
