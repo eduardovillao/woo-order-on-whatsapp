@@ -174,16 +174,40 @@ class OMW_Admin {
 	 * @return void
 	 */
 	public function add_admin_page() {
-
-		add_menu_page(
+		\add_menu_page(
 			apply_filters( 'omw_admin_page_title', $this->page_title ),
 			apply_filters( 'omw_admin_page_name', $this->plugin_name ),
-			'manage_options',
+			'publish_posts',
+			'order-on-mobile-for-woocommerce-dashboard',
+			'',
+			OMW_PLUGN_URL . 'assets/img/whatsapp.webp',
+			56,
+		);
+
+		\add_submenu_page(
+			'order-on-mobile-for-woocommerce-dashboard',
+			\esc_html__( 'Dashboard', 'woo-order-on-whatsapp' ),
+			\esc_html__( 'Dashboard', 'woo-order-on-whatsapp' ),
+			'publish_posts',
+			'order-on-mobile-for-woocommerce-dashboard',
+			[ $this, 'get_template_dashboard' ],
+			0
+		);
+
+		\add_submenu_page(
+			'order-on-mobile-for-woocommerce-dashboard',
+			\esc_html__( 'Settings', 'woo-order-on-whatsapp' ),
+			\esc_html__( 'Settings', 'woo-order-on-whatsapp' ),
+			'publish_posts',
 			apply_filters( 'omw_admin_page_slug', $this->page_options_slug ),
 			[ $this, 'create_admin_page' ],
-			OMW_PLUGN_URL . 'assets/img/whatsapp.webp',
-			56
+			1
 		);
+	}
+
+	public function get_template_dashboard() {
+		$template = apply_filters( 'omw_template_path_dashboard', OMW_PLUGIN_PATH . 'templates/admin/dashboard.php' );
+		include_once $template;
 	}
 
 	/**
