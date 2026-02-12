@@ -9,9 +9,6 @@ README.md
 /node_modules
 package.json
 package-lock.json
-/vendor
-composer.json
-composer.lock
 .eslintrc
 webpack.config.js
 style.bundle.js

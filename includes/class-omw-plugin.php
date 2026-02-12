@@ -252,7 +252,6 @@ final class OMW_Plugin {
 	 */
 	public function enqueue_admin_plugin_js() {
 		wp_enqueue_script( 'omw_admin_script', OMW_PLUGN_URL . '/assets/js/admin/admin-settings.min.js', [], OMW_VERSION, true );
-		wp_register_script( 'omw-admin-wp-feature-loop', 'https://unpkg.com/wpfeatureloop-sdk@1.4.0/dist/wpfeatureloop.umd.js', array(), OMW_VERSION, true );
 	}
 
 	/**

@@ -4,6 +4,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+use WPFeatureLoop\Client;
+
 ?>
 
 <div class="wrap">
@@ -46,28 +48,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 				</div>
 			</div>
 
-			<?php if ( \current_user_can( 'manage_options' ) ) : ?>
-				<?php wp_enqueue_script( 'omw-admin-wp-feature-loop' ); ?>
-				<?php $user = \wp_get_current_user(); ?>
-
-				<div class="mydd-admin-card">
-					<div id="feature-widget" style="width: 100%;"></div>
-					<script>
-						window.addEventListener('DOMContentLoaded', () => {
-							const widget = WPFeatureLoop.init({
-								container: "#feature-widget",
-								publicKey: "pk_live_783e198c8177013cc256635034cd22ba",
-								projectId: "cml8xc9n7000004l4ofl5tovv",
-								user: {
-									id: "<?php echo \esc_js( $user->ID ); ?>",
-									name: "<?php echo \esc_js( $user->display_name ); ?>",
-									email: "<?php echo \esc_js( $user->user_email ); ?>",
-								},
-							});
-						});
-					</script>
-				</div>
-			<?php endif; ?>
+			<div class="mydd-admin-card">
+				<?php
+					echo Client::renderWidget();
+				?>
+			</div>
 		</div>
 	</section>
 </div>
