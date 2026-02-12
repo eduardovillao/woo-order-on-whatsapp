@@ -18,8 +18,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-use WPFeatureLoop\Client;
-
 define( 'OMW_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'OMW_PLUGN_URL', plugin_dir_url( __FILE__ ) );
 define( 'OMW_VERSION', '2.9' );
@@ -39,7 +37,7 @@ if( ! version_compare( PHP_VERSION, OMW_PHP_MINIMUM_VERSION, '>=' ) ) {
 	include_once OMW_PLUGIN_PATH . 'includes/class-omw-plugin.php';
 	OMW_Plugin::instance();
 	require_once __DIR__ . '/vendor/autoload.php';
-	Client::init('pk_live_783e198c8177013cc256635034cd22ba', 'cml8xc9n7000004l4ofl5tovv', ['language' => 'en']);
+	WPFeatureLoop\Client::init('pk_live_783e198c8177013cc256635034cd22ba', 'cmljj016h000004l4i9gn0pkd', ['language' => 'en']);
 }
 
 /**
