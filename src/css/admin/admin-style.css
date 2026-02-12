@@ -1,7 +1,3 @@
-.myd-tabs-content {
-	display: none;
-}
-
 .myd-tabs-content--active {
 	display: block;
 }
