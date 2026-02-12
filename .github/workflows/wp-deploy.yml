@@ -2,15 +2,30 @@ name: Deploy to WordPress.org
 on:
   push:
     tags:
-    - "*"
+      - "*"
 jobs:
   tag:
     name: New version
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: WordPress Plugin Deploy
-      uses: 10up/action-wordpress-plugin-deploy@stable
-      env:
-        SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-        SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+      - uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "8.2"
+          tools: composer
+
+      - name: Install Composer dependencies (no-dev)
+        run: |
+          composer install \
+            --no-dev \
+            --prefer-dist \
+            --no-progress \
+            --optimize-autoloader
+
+      - name: WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
