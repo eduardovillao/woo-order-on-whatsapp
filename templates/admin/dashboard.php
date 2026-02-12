@@ -4,8 +4,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-use WPFeatureLoop\Client;
-
 ?>
 
 <div class="wrap">
@@ -50,7 +48,7 @@ use WPFeatureLoop\Client;
 
 			<div class="mydd-admin-card">
 				<?php
-					echo Client::renderWidget();
+					echo WPFeatureLoop\Client::getInstance('cmljj016h000004l4i9gn0pkd')->renderWidget();
 				?>
 			</div>
 		</div>
