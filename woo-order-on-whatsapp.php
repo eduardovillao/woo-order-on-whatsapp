@@ -37,7 +37,7 @@ if( ! version_compare( PHP_VERSION, OMW_PHP_MINIMUM_VERSION, '>=' ) ) {
 	include_once OMW_PLUGIN_PATH . 'includes/class-omw-plugin.php';
 	OMW_Plugin::instance();
 	require_once __DIR__ . '/vendor/autoload.php';
-	WPFeatureLoop\Client::init('pk_live_783e198c8177013cc256635034cd22ba', 'cmljj016h000004l4i9gn0pkd', ['language' => 'en']);
+	\WPFeatureLoop\Client::init('pk_live_783e198c8177013cc256635034cd22ba', 'cmljj016h000004l4i9gn0pkd', ['language' => 'en']);
 }
 
 /**

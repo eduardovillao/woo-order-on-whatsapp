@@ -48,7 +48,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			<div class="mydd-admin-card">
 				<?php
-					echo WPFeatureLoop\Client::getInstance('cmljj016h000004l4i9gn0pkd')->renderWidget();
+					echo \WPFeatureLoop\Client::getInstance('cmljj016h000004l4i9gn0pkd')->renderWidget();
 				?>
 			</div>
 		</div>
